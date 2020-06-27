@@ -6,6 +6,7 @@
     "spaced-comment": "off",
     "no-console": "warn",
     "no-undef": "off",
+    "no-plusplus": "off",
     "consistent-return": "off",
     "func-names": "off",
     "object-shorthand": "off",

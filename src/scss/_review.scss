@@ -11,6 +11,10 @@
   &__heading {
     color: var(--big-text-color);
     font-size: 3.5rem;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 5rem;
+    }
   }
 
   &__reviews {
@@ -23,6 +27,11 @@
     &::-webkit-scrollbar {
       display: none;
     }
+
+    @media only screen and (max-width: 37.5em) {
+      overflow: hidden;
+      height: 50rem;
+    }
   }
 
   &__box {
@@ -32,9 +41,18 @@
     background-color: var(--vary-light-gray);
     text-align: center;
 
+    @media only screen and (max-width: 37.5em) {
+      flex: 0 0 100%;
+      margin-top: 8rem;
+    }
+
     & img {
       width: 7rem;
       transform: translateY(-50%);
+
+      @media only screen and (max-width: 37.5em) {
+        width: 14rem;
+      }
     }
   }
 
@@ -43,16 +61,50 @@
     transform: translateY(-50%);
     color: var(--big-text-color);
     font-size: 1.7rem;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 3rem;
+    }
   }
 
   &__paragraph {
     text-align: center;
-    white-space: normal;
     width: 90%;
     color: var(--small-text-color);
     font-size: 1.3rem;
     line-height: 1.3;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 3rem;
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__slide {
+    display: none;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__dots {
+    background-color: #fff;
+    border: 2px solid var(--bright-red);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+
+    &--active {
+      background-color: var(--bright-red);
+    }
   }
 }
 
