@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--footer-color);
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+
+  &__foot {
+    color: var(--vary-light-gray);
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: auto 3rem;
+
+    @media only screen and (max-width: 37.5em) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+      row-gap: 3rem;
+    }
+  }
+
+  &__icons {
+    width: 50%;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 40%;
+    }
+  }
+
+  &__form {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 37.5em) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      // width: 40rem;
+      justify-content: center;
+      font-size: 4rem;
+    }
+  }
+
+  &__items:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+
+  &__uls {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    @media only screen and (max-width: 37.5em) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 40rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 37.5em) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      width: 40rem;
+      justify-content: space-between;
+    }
+
+    & svg {
+      fill: #fff;
+      height: 2rem;
+      width: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+  }
+
+  &__input {
+    padding: 1rem;
+    border: none;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2rem;
+      padding: 2rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__paragraph {
+    color: var(--small-text-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 37.5em) {
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 2rem;
+    }
+  }
+}

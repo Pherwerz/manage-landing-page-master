@@ -5,7 +5,7 @@
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "spaced-comment": "off",
     "no-console": "warn",
-    //"no-undef": "off",
+    "no-undef": "off",
     "consistent-return": "off",
     "func-names": "off",
     "object-shorthand": "off",

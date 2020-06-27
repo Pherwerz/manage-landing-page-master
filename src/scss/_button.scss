@@ -1,0 +1,37 @@
+.btn {
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  cursor: pointer;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 2rem 6rem;
+  }
+
+  &__orange {
+    color: var(--vary-light-gray);
+    background-color: var(--bright-red);
+    box-shadow: 0 1.5rem 1rem var(--very-pale-red);
+
+    &:hover {
+      background-color: hsl(12, 88%, 69%);
+    }
+  }
+
+  &__white {
+    background-color: var(--vary-light-gray);
+    color: var(--bright-red);
+
+    &:hover {
+      background-color: var(--very-pale-red);
+    }
+  }
+
+  &__special {
+    box-shadow: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
